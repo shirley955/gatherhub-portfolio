@@ -1,23 +1,25 @@
 # GatherHub
 
-GatherHub is a student web prototype that explores how food-related community activity connects with **events and physical spaces**.
+GatherHub is a spatial data story that investigates how food-related community activity connects to physical space in London. Built as a prototype web application, it brings together data on community venues, shared kitchens, and food-led events to reveal the spatial conditions under which everyday food practices can become shared, visible, and collectively sustained.
 
-The platform brings together data on shared kitchens, community venues, and food-led events, helping users see local activity alongside the places where it happens.
+---
+## Context of prototype
+
+For many of London's urban newcomers, e.g. international students, migrant workers, diaspora communities, food insecurity is not simply about access to food. It is about the absence of spatial infrastructure that would allow private food practices to become shared ones. People may possess rich culinary traditions and a desire to cook and eat together, but lack access to kitchens, halls, or community spaces where this can happen. The problem is fundamentally spatial: it concerns the availability, accessibility, and visibility of places that can host food-related social activity.
+
+Existing information about these spaces and activities is fragmented across platforms, inconsistently structured, and often invisible to the people who need it most. GatherHub addresses this gap by linking events to the places where they happen, making the relationship between community food practice and urban infrastructure legible and navigable.
 
 ---
 
 ## Conceptual Framing
 
-This project treats food-related activity as an everyday practice through which local social connections can gradually form.
+Conceptual Framing
 
-For many people in cities such as London, especially recent arrivals, opportunities to build local networks are uneven. Some groups can access universities, workplaces, or other institutional settings, while others rely more on informal and repeated interactions in daily life.
+This project draws on the concept of urban commons — shared urban resources that are collectively used and, in their fullest form, collectively governed. We treat community food spaces as potential commons: the resources exist (kitchens, halls, community centres), and communities of practice form around them (organisers, participants, venue hosts). However, the governance dimension — who decides the rules, who allocates access, how conflicts are resolved — remains largely absent from the current landscape.
 
-Cooking, sharing meals, and preparing food for others often begin in private spaces, but they can move into shared or semi-public settings when suitable environments are available. Community kitchens, halls, and organised events can all support this shift.
+GatherHub does not claim to be a commons platform. Rather, it functions as a diagnostic tool: a spatial data story that asks where in the city the conditions for commons-based food practice are forming, and where infrastructure gaps or data fragmentation prevent them from emerging. The prototype sits deliberately at the boundary between an information platform and a commons-enabling tool, and this tension is itself part of the story it tells.
 
-The move from private practice to shared activity depends on the availability and accessibility of places that can host these activities. In this project, space is therefore treated as an active condition that shapes how social interaction can happen.
-
-By examining how food-related events connect to specific places, GatherHub looks at how everyday practices become visible, shared, and situated within the city. It also points to the role of community infrastructure in supporting forms of participation that are often informal or underrepresented in formal datasets.
-
+We also frame the prototype as a threshold — a transitional space that mediates between private food practice (cooking alone, eating at home) and shared community activity (communal meals, food workshops, cultural exchanges). The design supports both discovery (finding events and venues nearby) and initiation (submitting new events and linking them to spaces), so that users are not only consumers of information but potential contributors to the community knowledge base.
 
 ## Project Overview
 
@@ -35,10 +37,16 @@ The prototype focuses on **food-led activity** as a specific and observable entr
 
 ## Key Features
 
-- **Map-based exploration** of community venues  
-- **Event browsing** with partial linkage to physical spaces  
-- **Place detail pages** showing venue characteristics and associated activity  
-- **Event submission interface** to support linking activity back to spaces  
+Features
+
+- **Map-based spatial exploration** of community venues across London, showing where food-related infrastructure is concentrated and where gaps exist
+
+- **Event browsing** with filtering and partial linkage to physical spaces, revealing the connective tissue between activities and places
+
+- **Place detail page** displaying venue characteristics, facilities, and associated activity history
+Event submission interface allowing users to contribute new activities and associate them with known venues — a step toward participatory data production
+
+- **Social connectivity visualisation** illustrating the network structure between events, venues, and communities- 
 
 The interface is designed to support both:
 
@@ -49,26 +57,29 @@ The interface is designed to support both:
 
 ## Data and Linking Approach
 
-Data was compiled from multiple sources, including publicly available event platforms and manually curated venue datasets.
+Data was compiled from multiple publicly available event platforms and manually curated venue datasets. Due to the inherently fragmented nature of community activity data in London:
 
-Due to the fragmented nature of real-world data:
-
-- only a subset of events can be reliably linked to specific venues  
-- many events contain incomplete or ambiguous location information  
+- Only a subset of events can be reliably linked to specific venues
+- Many events contain incomplete or ambiguous location information
+- Venue data varies in quality, completeness, and currency
 
 As a result, the platform uses **partial event-place linking**, where connections are made only when the relationship is sufficiently clear.
 
-We treat this partial coverage as part of the investigation, not only as a limitation. The prototype reflects how community activity is currently represented across disconnected systems, while also testing how stronger spatial links might be developed.
+
+We treat this partial event–place linkage not merely as a technical limitation but as a substantive finding. The incompleteness of our data reflects a structural reality: much of London's community food activity exists in a data operating outside the reach of formal information systems. This fragmentation is itself part of the spatial data story GatherHub tells: it reveals how community infrastructure remains invisible to the data architectures that increasingly shape urban governance and resource allocation.
 
 ---
 
 ## Scope
 
-The current prototype focuses on:
+Scope and Limitations
+The current prototype focuses on food-related community activity and small-scale, locally hosted events (shared meals, cooking workshops, food exchanges) within London. It does not attempt to provide exhaustive event listings, real-time data, or fully automated event–venue matching.
 
-- food-related community activity  
-- small-scale, locally hosted events (e.g. shared meals, workshops)  
-- venues that can support these activities (e.g. kitchens, halls, centres)  
+Key limitations include:
+
+- **Partial linkage:** event–place connections are incomplete and partially manual, reflecting the fragmented state of source data
+- **Temporal dynamics:** the prototype does not currently account for recurring events, cancellations, or seasonal variation  
+- **Representational gaps:** communities that do not use digital platforms, or that deliberately avoid digital visibility, remain absent from the dataset — a concern we address in our design document's ethical reflection
 
 It does not attempt to provide:
 
@@ -76,44 +87,29 @@ It does not attempt to provide:
 - fully verified or real-time data coverage  
 - automated large-scale matching between all events and venues  
 
+These limitations are acknowledged as integral to the design investigation.
+
 ---
 
 ## Urban Context
 
-This project sits within a broader urban context where:
+This project sits within a broader urban context where access to shared spaces is unevenly distributed, where informal community activities are systematically underrepresented in formal data systems, and where participation in local life is shaped by both social networks and spatial availability. 
 
-- access to shared spaces is uneven across neighbourhoods  
-- informal and small-scale community activities are often underrepresented in formal data systems  
-- participation in local life is shaped by both **social networks and spatial availability**  
+- Access to shared spaces is uneven across neighbourhoods  
+- Informal and small-scale community activities are often underrepresented in formal data systems  
+- Participation in local life is shaped by both **social networks and spatial availability**  
 
-By foregrounding the relationship between **food practices and physical space**, the prototype highlights:
+By foregrounding the relationship between **food practices and physical space**, GatherHub contributes to ongoing discussions around **community infrastructure, spatial equity, and the politics of urban data visibility** includes:
 
-- how everyday activities are spatially situated  
-- how infrastructure (such as kitchens and community venues) supports social interaction  
-- how data fragmentation can obscure opportunities for participation  
-
-The project contributes to discussions in urban studies and spatial design around **community infrastructure, accessibility, and visibility of local activity**.
+- How everyday activities are spatially situated  
+- How infrastructure (such as kitchens and community venues) supports social interaction  
+- How data fragmentation can obscure opportunities for participation  
 
 ---
 
-## Limitations
+## Future Directions
 
-- Event-place linkage is incomplete and partially manual
-- Event data varies in quality and consistency across sources  
-- Spatial coverage is limited to available datasets  
-- The prototype does not account for temporal dynamics (e.g. recurring events, cancellations)
-
-These limitations are acknowledged as part of the design exploration rather than fully resolved in the current implementation.
-
----
-
-## Future Work
-
-Potential extensions include:
-
-- improving matching methods between events and venues  
-- incorporating additional data sources for better coverage  
-- introducing indicators of data confidence and linkage reliability  
-- expanding to other types of community activity beyond food  
-
----
+- Improved matching methods between events and venues using spatial proximity and text analysis
+- Incorporation of additional data sources (council venue registries, community organisation directories)
+- Indicators of data confidence and linkage reliability to communicate uncertainty transparently
+- **Exploration of participatory governance features** — enabling communities to collectively manage venue information and access rules
