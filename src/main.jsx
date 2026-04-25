@@ -8,7 +8,7 @@ import './styles/theme.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/casa0028_group_project">
       <App />
     </BrowserRouter>
   </StrictMode>,
