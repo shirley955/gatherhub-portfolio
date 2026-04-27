@@ -130,6 +130,12 @@ export default function About() {
           </article>
         </div>
       </section>
+      <section className="content-card about-card">
+        <h3>Data sources</h3>
+        <p>
+          Event data was collected from <a href="https://www.eventbrite.co.uk" target="_blank" rel="noopener noreferrer">Eventbrite</a>, <a href="https://www.meetup.com" target="_blank" rel="noopener noreferrer">Meetup</a>, and <a href="https://richmix.org.uk" target="_blank" rel="noopener noreferrer">Rich Mix</a>. Venue data was compiled from <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> queries filtered by amenity type. This dataset is used for academic research purposes as part of CASA0028 at UCL. Event and venue connections were manually verified where possible; unconfirmed links are marked as venue uncertain.
+        </p>
+      </section>
     </main>
   )
 }
